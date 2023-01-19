@@ -1,6 +1,6 @@
 {
   "name": "components-film-generation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "storyBook",
   "main": "dist/cjs/index.js",
   "scripts": {
