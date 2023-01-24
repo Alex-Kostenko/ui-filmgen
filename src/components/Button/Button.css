@@ -1,5 +1,5 @@
 @import "../../fonts/fonts.css";
-
+/* 
 .mainStyle {
   font-size: 40px;
   border-radius: 100px;
@@ -12,10 +12,82 @@
   font-weight: 700;
   border: none;
   font-family: "Urbanist";
+  overflow: hidden;
+  transition: 0.5s;
+} */
+/* темно
+  сірий
+  #0d0d0d
+  сірий
+  #1f1f1f
+  червоний
+  #f33f3f
+  майже
+  чорний
+  #080808 */
+.offset {
+  box-shadow: 0 0 0 0 #f33f3f, inset 6em 3.5em 0 0 #f33f3f;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Urbanist";
+  transition: 0.25s;
+  color: #fff;
+  padding: 16px 32px;
+  margin: 8px;
+  border: 2px solid #f33f3f;
+  background: none;
+  line-height: 1;
 }
-.mainStyle:hover {
+.offset:hover,
+.offset:focus {
+  box-shadow: 0.3em 0.3em 0 0 #1f1f1f, inset 0.3em 0.3em 0 0 #1f1f1f;
+  cursor: pointer;
+  color: #080808;
+  border-color: #1f1f1f;
+}
+
+/* .mainStyle:hover {
   transition: all 0.7s;
   color: #f33f3f;
   background: #080808;
   cursor: pointer;
+} */
+/* .mainStyle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180%;
+  background: yellow;
+  border-radius: 0 0 50% 50%;
+  z-index: -1;
+  transition: 0.5s;
 }
+.mainStyle:hover {
+  background: transparent;
+  border: 2px solid;
+  border-color: yellow;
+  color: red;
+}
+.mainStyle:hover::before {
+  height: "0%";
+}
+
+.mainStyle:hover:disabled {
+  background: yellow;
+  border: 2px solid;
+  border-color: red;
+  color: white;
+}
+
+.mainStyle:active {
+  background: transparent;
+  border: 2px solid;
+  border-color: black;
+  color: black;
+}
+
+.mainStyle:active::before {
+  background: transparent;
+} */

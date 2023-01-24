@@ -12,10 +12,12 @@ const Template: ComponentStory<typeof Tag> = (args) => <Tag {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-  label: "Science Fiction",
+  label: "Romance",
+  colorBack: "white",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: "Active tag",
+  colorBack: "#f33f3f",
 };
