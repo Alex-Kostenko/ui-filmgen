@@ -1,20 +1,4 @@
 @import "../../fonts/fonts.css";
-/* 
-.mainStyle {
-  font-size: 40px;
-  border-radius: 100px;
-  color: #080808;
-  background: #f33f3f;
-  padding: 18px 16px 18px 16px;
-  width: 184px;
-  height: 58px;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  font-family: "Urbanist";
-  overflow: hidden;
-  transition: 0.5s;
-} */
 /* темно
   сірий
   #0d0d0d
@@ -45,49 +29,3 @@
   color: #080808;
   border-color: #1f1f1f;
 }
-
-/* .mainStyle:hover {
-  transition: all 0.7s;
-  color: #f33f3f;
-  background: #080808;
-  cursor: pointer;
-} */
-/* .mainStyle:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 180%;
-  background: yellow;
-  border-radius: 0 0 50% 50%;
-  z-index: -1;
-  transition: 0.5s;
-}
-.mainStyle:hover {
-  background: transparent;
-  border: 2px solid;
-  border-color: yellow;
-  color: red;
-}
-.mainStyle:hover::before {
-  height: "0%";
-}
-
-.mainStyle:hover:disabled {
-  background: yellow;
-  border: 2px solid;
-  border-color: red;
-  color: white;
-}
-
-.mainStyle:active {
-  background: transparent;
-  border: 2px solid;
-  border-color: black;
-  color: black;
-}
-
-.mainStyle:active::before {
-  background: transparent;
-} */
