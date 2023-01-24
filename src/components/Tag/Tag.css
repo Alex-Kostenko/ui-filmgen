@@ -3,11 +3,13 @@
   border-radius: 100px;
   color: #080808;
   background: #f33f3f;
-  padding: 18px 16px 18px 16px;
-  width: 184px;
-  height: 58px;
+  /* padding: 18px 16px 18px 16px; */
+  height: 42px;
   font-size: 16px;
   font-weight: 700;
-  border: none;
   font-family: "Urbanist";
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
