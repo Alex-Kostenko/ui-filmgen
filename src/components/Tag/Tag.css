@@ -1,6 +1,4 @@
-@import "../../fonts/fonts.css";
-
-.mainStyle {
+.tag {
   font-size: 40px;
   border-radius: 100px;
   color: #080808;
@@ -12,10 +10,4 @@
   font-weight: 700;
   border: none;
   font-family: "Urbanist";
-}
-.mainStyle:hover {
-  transition: all 0.7s;
-  color: #f33f3f;
-  background: #080808;
-  cursor: pointer;
 }
