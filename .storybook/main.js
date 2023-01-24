@@ -11,5 +11,8 @@ module.exports = {
     "postcss-flexbugs-fixes",
     "autoprefixer"
   ],
-  "framework": "@storybook/react"
+  "framework": "@storybook/react",
+  core: {
+    builder: 'webpack4',
+  },
 }
