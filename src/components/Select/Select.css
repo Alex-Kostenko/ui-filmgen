@@ -9,6 +9,8 @@
   cursor: pointer !important;
   box-shadow: none !important;
   transition: 0.4s !important;
+  background-color: #f33f3f !important;
+  letter-spacing: 1.3px !important;
 }
 
 .castom-select__input-container {
@@ -16,29 +18,31 @@
 }
 
 .castom-select__control--is-focused {
-  background-color: #080808 !important;
+  background-color: #f33f3f !important;
   transition: 0.4s !important;
 }
 
 .css-tj5bde-Svg {
-  color: #f33f3f !important;
+  color: #ffffff !important;
 }
 
 .castom-select__placeholder {
-  color: #f33f3f !important;
+  color: #ffffff !important;
 }
 
 .castom-select__indicator-separator {
-  background-color: #f33f3f !important;
+  background-color: #ffffff !important;
 }
 
 .castom-select__single-value {
-  color: #f33f3f !important;
+  color: #ffffff !important;
+  letter-spacing: 1.3px !important;
 }
 
 .castom-select__menu {
   width: 180px !important;
   box-shadow: none !important;
+  letter-spacing: 1.2px !important;
 }
 
 .castom-select__option {
