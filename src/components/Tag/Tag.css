@@ -1,15 +1,30 @@
 .tag {
-  font-size: 40px;
-  border-radius: 100px;
-  color: #080808;
-  background: #f33f3f;
-  /* padding: 18px 16px 18px 16px; */
-  height: 42px;
-  font-size: 16px;
-  font-weight: 700;
-  font-family: "Urbanist";
-  width: 100px;
   display: flex;
+  width: fit-content;
+  height: 42px;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #080808;
+  background-color: #f33f3f;
+  font-family: "Urbanist";
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.tag:hover {
+  color: #f33f3f;
+  background-color: #080808;
+  transition: 0.4s;
+}
+
+.blackTag {
+  background-color: #080808;
+  color: #f33f3f;
+}
+
+.blackTag:hover {
+  background-color: #f33f3f;
+  color: #080808;
 }
