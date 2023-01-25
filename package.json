@@ -58,5 +58,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "react-select": "^5.7.0"
+  }
 }

@@ -1,0 +1,44 @@
+.castom-select__control {
+  width: 180px !important;
+  border: 1px solid #f33f3f !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+.castom-select__control--is-focused {
+  background-color: #080808 !important;
+}
+
+.css-tj5bde-Svg {
+  color: #f33f3f !important;
+}
+
+.castom-select__placeholder {
+  color: #f33f3f !important;
+}
+
+.castom-select__indicator-separator {
+  background-color: #f33f3f !important;
+}
+
+.castom-select__single-value {
+  color: #f33f3f !important;
+}
+
+.castom-select__menu {
+  width: 180px !important;
+  box-shadow: none !important;
+}
+
+.castom-select__option {
+  color: #f33f3f !important;
+}
+
+.castom-select__option {
+  background-color: #ffffff !important;
+}
+
+.castom-select__option:hover {
+  background-color: #080808 !important;
+}
