@@ -9,15 +9,15 @@ export default {
 
 const Template: ComponentStory<typeof Tag> = (args) => <Tag {...args} />;
 
-export const Primary = Template.bind({});
+export const pinkTag = Template.bind({});
 
-Primary.args = {
+pinkTag.args = {
   label: "Romance",
-  colorBack: "white",
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: "Active tag",
-  colorBack: "#f33f3f",
+export const blackTag = Template.bind({});
+
+blackTag.args = {
+  label: "Tag",
+  className: "blackTag",
 };

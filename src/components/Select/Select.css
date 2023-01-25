@@ -1,9 +1,17 @@
+.css-13cymwt-control {
+  border-radius: 0 !important;
+}
+
 .castom-select__control {
   width: 180px !important;
   border: 1px solid #f33f3f !important;
-  border-radius: 10px !important;
+  border-radius: none !important;
   cursor: pointer !important;
   box-shadow: none !important;
+}
+
+.castom-select__input-container {
+  caret-color: transparent !important;
 }
 
 .castom-select__control--is-focused {
@@ -33,9 +41,6 @@
 
 .castom-select__option {
   color: #f33f3f !important;
-}
-
-.castom-select__option {
   background-color: #ffffff !important;
 }
 

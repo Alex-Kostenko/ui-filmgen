@@ -3,13 +3,14 @@ import "./Tag.css";
 
 export interface TagProps {
   label?: string;
-  colorBack?: string;
+  onClick?: () => any;
+  className?: string;
 }
 
 const Tag = (props: TagProps) => {
   return (
-    <div className="tag" style={{ background: props.colorBack }}>
-      {props.label}
+    <div {...props} className={"tag " + props.className}>
+      #{props.label}
     </div>
   );
 };
