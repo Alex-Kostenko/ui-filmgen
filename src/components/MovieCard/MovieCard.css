@@ -1,0 +1,121 @@
+.movie-card-container {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  font-family: "Urbanist";
+}
+
+.movie-img {
+  max-width: 20%;
+  min-width: 250px;
+  cursor: pointer;
+}
+
+.description-container {
+  margin-left: 20px;
+}
+
+.description-header {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.movie-title {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 40px;
+  color: #f33f3f;
+  user-select: none;
+  cursor: pointer;
+}
+
+.movie-text {
+  display: block;
+  margin: 10px 0 0 0;
+  padding-right: 5px;
+  max-height: 180px;
+  overflow-y: auto;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+.movie-text::-webkit-scrollbar {
+  width: 10px;
+}
+
+.movie-text::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.movie-text::-webkit-scrollbar-thumb {
+  background-color: #f33f3f;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+}
+
+.movie-date {
+  margin: 0 0 0 20px;
+  user-select: none;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+.movie-tag-container {
+  display: flex;
+  margin-left: auto;
+}
+
+.movie-tag {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 1280px) {
+  .description-header {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .movie-tag-container {
+    margin: 5px 0 0 -5px;
+  }
+
+  .movie-date {
+    margin: 5px 0 0 0;
+  }
+
+  .movie-card-container {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie-card-container {
+    flex-direction: column;
+  }
+
+  .movie-img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .movie-title {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .movie-date {
+    display: block;
+    margin: 5px auto;
+  }
+
+  .movie-tag-container {
+    margin: 5px auto;
+    flex-wrap: wrap;
+  }
+  .movie-tag {
+    margin-top: 5px;
+  }
+}

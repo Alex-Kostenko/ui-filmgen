@@ -13,6 +13,7 @@
   font-family: "Urbanist";
   cursor: pointer;
   transition: 0.4s;
+  user-select: none;
 }
 
 .tag:hover {
@@ -41,10 +42,10 @@
   }
   10%,
   30% {
-    transform: rotate(-3deg);
+    transform: rotate(-1deg);
   }
   20%,
   40% {
-    transform: rotate(3deg);
+    transform: rotate(1deg);
   }
 }
