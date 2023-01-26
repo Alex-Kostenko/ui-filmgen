@@ -14,10 +14,3 @@ export const pinkTag = Template.bind({});
 pinkTag.args = {
   label: "Romance",
 };
-
-export const blackTag = Template.bind({});
-
-blackTag.args = {
-  label: "Tag",
-  className: "blackTag",
-};
