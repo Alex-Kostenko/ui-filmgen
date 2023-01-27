@@ -3,10 +3,15 @@ import "./Slider.css";
 import Slider from "react-slick";
 import LeftArrow from "../Icons/LeftArrow";
 import RightArrow from "../Icons/RightArrow";
-import { storiesOf } from "@storybook/react";
+
+interface descroptionSlider {
+  img: any;
+  description: string;
+}
 
 export interface SliderProps {
   className?: string;
+  dateForSlider?: descroptionSlider[];
   [name: string]: any;
   img: any;
 }
@@ -14,12 +19,10 @@ export interface SliderProps {
 const SliderComponent = (props: SliderProps) => {
   const sliderRef = useRef<any>(null);
 
-  const imageAlt = "my image";
-
   var settings = {
     dots: true,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
   };
 
   return (
@@ -35,18 +38,9 @@ const SliderComponent = (props: SliderProps) => {
         </div>
       </div>
       <Slider className="customSlider" ref={sliderRef} {...settings}>
-        <div>
-          <img src="http://placekitten.com/g/400/201" />
-        </div>
-        <div>
-          <img src="http://placekitten.com/g/400/200" />
-        </div>
-        <div>
-          <img src="http://placekitten.com/g/400/203" />
-        </div>
-        <div>
-          <img src="http://placekitten.com/g/400/204" />
-        </div>
+        {props.dateForSlider?.map((item: descroptionSlider, index: number) => {
+          return <div>{item.img}</div>;
+        })}
       </Slider>
       {/* <div>{storiesOf("graphic.png", module)}</div> */}
 

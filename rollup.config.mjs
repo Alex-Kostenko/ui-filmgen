@@ -21,6 +21,9 @@ export default [
         sourcemap: true,
       },
     ],
+    resolve: {
+      extensions: [".js", ".ts", ".jsx", ".tsx"],
+    },
     plugins: [
       resolve(),
       commonjs(),
