@@ -61,8 +61,11 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
+    "@types/react-date-range": "^1.4.4",
+    "date-fns": "^2.29.3",
+    "react-date-range": "^1.4.0",
+    "react-select": "^5.7.0",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1",
-    "react-select": "^5.7.0"
+    "slick-carousel": "^1.8.1"
   }
 }
