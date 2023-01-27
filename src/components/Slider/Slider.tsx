@@ -42,9 +42,6 @@ const SliderComponent = (props: SliderProps) => {
           return <div>{item.img}</div>;
         })}
       </Slider>
-      {/* <div>{storiesOf("graphic.png", module)}</div> */}
-
-      <img src="/images/ukr.png" />
     </div>
   );
 };

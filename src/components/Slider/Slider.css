@@ -25,8 +25,14 @@ li.slick-active > button::before {
     rgba(29, 29, 29, 0) 0%,
     rgba(30, 19, 19, 1) 100%
   );
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rightArrow {
+  /* width: ; */
   position: absolute;
   z-index: 10;
   right: 0;
@@ -36,24 +42,13 @@ li.slick-active > button::before {
     rgba(29, 29, 29, 0) 0%,
     rgba(30, 19, 19, 1) 100%
   );
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapperSlider {
   position: relative;
-}
-
-.left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 100px;
-}
-
-.right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 100px;
 }
