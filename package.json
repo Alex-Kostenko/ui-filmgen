@@ -9,7 +9,10 @@
   "scripts": {
     "rollup": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prettier": "prettier --write src/**/*.tsx",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "lint:write": "eslint --debug src/ --fix"
   },
   "repository": {
     "type": "git",
@@ -40,10 +43,13 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.26",
     "@types/react-slick": "^0.23.10",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
     "postcss": "^8.4.21",
     "postcss-flexbugs-fixes": "^5.0.2",
+    "prettier": "^2.8.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.10.0",
@@ -61,11 +67,30 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
+    "@babel/eslint-parser": "^8.32.0",
+    "@types/node": "^18.11.18",
     "@types/react-date-range": "^1.4.4",
+    "babel-eslint": "^7.5.4",
     "date-fns": "^2.29.3",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^13.1.6",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.32.1",
     "react-date-range": "^1.4.0",
     "react-select": "^5.7.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": "npm run lint",
+    "*.{js,css,md,html,json}": "npm run format"
+  },
+  "format": "prettier --write \"src//*.ts\" \"test//*.ts\""
 }
