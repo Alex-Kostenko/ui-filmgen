@@ -1,5 +1,5 @@
-import React from "react";
-import "./Button.css";
+import React from 'react';
+import './Button.css';
 
 export interface ButtonProps {
   label?: string;
@@ -11,7 +11,7 @@ export interface ButtonProps {
 
 const Button = (props: ButtonProps) => {
   return (
-    <button {...props} className={"offset " + props.className}>
+    <button {...props} className={'offset ' + props.className}>
       {props.label}
     </button>
   );
