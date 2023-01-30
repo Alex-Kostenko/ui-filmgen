@@ -3,7 +3,8 @@ import './MovieCard.css';
 import Tag from '../Tag';
 
 export interface MovieCardProps {
-  title?: string;
+  titleEng?: string;
+  titleRus?: string;
   description?: string;
   date: string;
   img: string;
@@ -18,14 +19,18 @@ const MovieCard = (props: MovieCardProps) => {
       <img className='movie-img' src={props.img} alt='img' />
       <div className='description-container'>
         <div className='description-header'>
-          <h1 className='movie-title'>{props.title}</h1>
-          <p className='movie-date'>release date: {props.date}</p>
+          <div className='title-conteiner'>
+            <h1 className='movie-title'>{props.titleEng}</h1>
+            <div className='line'></div>
+            <h1 className='movie-title'>{props.titleRus}</h1>
+          </div>
           <div className='movie-tag-container'>
             {props.labels?.map((label) => (
               <Tag className='tag-medium' label={label} />
             ))}
           </div>
         </div>
+        <p className='movie-date'>Release date: {props.date}</p>
         <p className='movie-text'>{props.description}</p>
       </div>
     </div>
