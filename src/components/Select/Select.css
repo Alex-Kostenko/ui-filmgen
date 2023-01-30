@@ -2,7 +2,8 @@
   width: 180px !important;
   border: none !important;
   border-radius: 0 !important;
-  font-family: "Urbanist" !important;
+  font-family: 'Urbanist' !important;
+  font-weight: 700 !important;
   cursor: pointer !important;
   box-shadow: none !important;
   transition: 0.4s !important;
@@ -39,21 +40,24 @@
 }
 
 .castom-select__menu {
+  margin: 0 !important;
   width: 180px !important;
   box-shadow: none !important;
   letter-spacing: 1.2px !important;
-  border: 1px solid #f33f3f;
+  border: 2px solid #f33f3f;
   border-radius: 0 !important;
 }
 
 .castom-select__option {
+  font-family: 'Urbanist' !important;
+  font-weight: 700 !important;
   color: #f33f3f !important;
   background-color: #ffffff !important;
   transition: 0.25s !important;
 }
 
 .castom-select__option:hover {
-  width: 168px !important;
+  width: 166px !important;
   background-color: #080808 !important;
   transition: 0.25s !important;
   transform: translate(10px, 0);
