@@ -1,22 +1,22 @@
-.tag {
+.tag-small {
   display: flex;
   width: fit-content;
-  height: 42px;
+  height: 35px;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
-  font-size: 15px;
+  padding: 0 5px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.6px;
   color: #ffffff;
   background-color: #f33f3f;
-  font-family: "Urbanist";
+  font-family: 'Urbanist';
   cursor: pointer;
   transition: 0.4s;
   user-select: none;
 }
 
-.tag:hover {
+.tag-small:hover {
   color: #f33f3f;
   background-color: #080808;
   transition: 0.4s;
@@ -24,14 +24,56 @@
     trambling-animation;
 }
 
-.blackTag {
-  background-color: #080808;
-  color: #f33f3f;
+.tag-medium {
+  display: flex;
+  width: fit-content;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  color: #ffffff;
+  background-color: #f33f3f;
+  font-family: 'Urbanist';
+  cursor: pointer;
+  transition: 0.4s;
+  user-select: none;
 }
 
-.blackTag:hover {
+.tag-medium:hover {
+  color: #f33f3f;
+  background-color: #080808;
+  transition: 0.4s;
+  animation: 1.2s ease-in-out 0s normal none infinite running
+    trambling-animation;
+}
+
+.tag-large {
+  display: flex;
+  width: fit-content;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  color: #ffffff;
   background-color: #f33f3f;
-  color: #080808;
+  font-family: 'Urbanist';
+  cursor: pointer;
+  transition: 0.4s;
+  user-select: none;
+}
+
+.tag-large:hover {
+  color: #f33f3f;
+  background-color: #080808;
+  transition: 0.4s;
+  animation: 1.2s ease-in-out 0s normal none infinite running
+    trambling-animation;
 }
 
 @keyframes trambling-animation {

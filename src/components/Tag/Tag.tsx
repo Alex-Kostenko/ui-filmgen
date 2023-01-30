@@ -1,15 +1,15 @@
-import React from "react";
-import "./Tag.css";
+import React from 'react';
+import './Tag.css';
 
 export interface TagProps {
   label?: string;
   onClick?: () => any;
-  className?: string;
+  className: string;
 }
 
 const Tag = (props: TagProps) => {
   return (
-    <div {...props} className={"tag " + props.className}>
+    <div {...props} className={`${props.className} ` + props.className}>
       #{props.label}
     </div>
   );
