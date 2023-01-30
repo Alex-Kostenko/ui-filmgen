@@ -12,7 +12,8 @@
     "build-storybook": "build-storybook",
     "prettier": "prettier --write src/**/*.tsx",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "lint:write": "eslint --debug src/ --fix"
+    "lint:write": "eslint --debug src/ --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,7 @@
     "@typescript-eslint/parser": "^5.0.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
+    "husky": "^8.0.0",
     "postcss": "^8.4.21",
     "postcss-flexbugs-fixes": "^5.0.2",
     "prettier": "^2.8.3",
@@ -83,6 +85,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.32.1",
+    "lint-staged": "^13.1.0",
     "react-date-range": "^1.4.0",
     "react-select": "^5.7.0",
     "react-slick": "^0.29.0",
