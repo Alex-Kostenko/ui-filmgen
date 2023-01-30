@@ -1,16 +1,31 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import Tag from "./Tag";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import Tag from './Tag';
 
 export default {
-  title: "UI/Tag",
+  title: 'UI/Tag',
   component: Tag,
 } as ComponentMeta<typeof Tag>;
 
 const Template: ComponentStory<typeof Tag> = (args) => <Tag {...args} />;
 
-export const pinkTag = Template.bind({});
+export const small = Template.bind({});
 
-pinkTag.args = {
-  label: "Romance",
+small.args = {
+  label: 'Romance',
+  className: 'tag-small',
+};
+
+export const medium = Template.bind({});
+
+medium.args = {
+  label: 'Romance',
+  className: 'tag-medium',
+};
+
+export const large = Template.bind({});
+
+large.args = {
+  label: 'Romance',
+  className: 'tag-large',
 };
