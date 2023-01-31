@@ -1,3 +1,3 @@
 export const IconEnum = {
-  leftArrow: "./left.png",
+  leftArrow: './left.png',
 };

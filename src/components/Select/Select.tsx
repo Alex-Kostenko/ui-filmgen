@@ -1,6 +1,6 @@
-import React from "react";
-import Select from "react-select";
-import "./Select.css";
+import React from 'react';
+import Select from 'react-select';
+import './Select.css';
 
 type IOptions = {
   value: string;
@@ -21,7 +21,7 @@ const SelectComponent = (props: SelectProps) => {
       placeholder={props.placeholder}
       classNamePrefix="castom-select"
       {...props}
-      className={"mainSelectStyle " + props.className}
+      className={'mainSelectStyle ' + props.className}
       options={props.options}
     />
   );
