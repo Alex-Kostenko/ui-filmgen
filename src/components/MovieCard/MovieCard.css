@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   height: fit-content;
+  padding-bottom: 20px;
   font-family: 'Urbanist';
 }
 
@@ -31,7 +32,7 @@
 
 .movie-title {
   margin: 10px 0 0 0;
-  font-size: 40px;
+  font-size: 33px;
   color: #f33f3f;
   user-select: none;
   cursor: pointer;
@@ -48,7 +49,7 @@
   display: block;
   margin: 10px 0 0 0;
   padding-right: 5px;
-  max-height: 180px;
+  height: 180px;
   overflow-y: auto;
   line-height: 1.4;
   letter-spacing: 0.5px;
@@ -118,7 +119,7 @@
   }
 
   .movie-title {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .movie-title:first-child {
@@ -131,6 +132,7 @@
 
   .movie-date {
     display: block;
+    width: fit-content;
     margin: 5px auto;
   }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import './Tag.css';
 
 export interface TagProps {
-  label?: string;
+  label?: string | string[] | undefined;
   onClick?: () => any;
   className: string;
 }
