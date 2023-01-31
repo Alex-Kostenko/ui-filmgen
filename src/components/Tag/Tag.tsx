@@ -9,7 +9,7 @@ export interface TagProps {
 
 const Tag = (props: TagProps) => {
   return (
-    <div {...props} className={`${props.className} ` + props.className}>
+    <div {...props} className={props.className}>
       #{props.label}
     </div>
   )
