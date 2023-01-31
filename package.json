@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/Alex-Kostenko"
   },
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "storyBook",
   "main": "dist/cjs/index.js",
   "scripts": {
@@ -69,7 +69,9 @@
   },
   "peerDependencies": {
     "react-dom": "^18.2.0",
-    "react-select": "^5.7.0"
+    "react-select": "^5.7.0",
+    "react-slick": "^0.29.0",
+    "react-date-range": "^1.4.0"
   },
   "module": "dist/esm/index.js",
   "files": [
