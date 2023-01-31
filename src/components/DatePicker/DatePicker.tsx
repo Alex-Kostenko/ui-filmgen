@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
 import { addDays, format } from 'date-fns'
+import React, { useEffect, useRef, useState } from 'react'
 import { DateRangePicker } from 'react-date-range'
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
@@ -27,6 +27,7 @@ const DatePicker = (/* props: DatePickerProps*/) => {
   }, [])
 
   const hideOnescape = (e: any) => {
+    // eslint-disable-next-line
     console.log(e.key)
     if (e.key === 'Escape') {
       setOpen(false)
