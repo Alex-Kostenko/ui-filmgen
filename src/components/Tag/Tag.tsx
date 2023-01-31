@@ -1,10 +1,10 @@
-import React from 'react';
-import './Tag.css';
+import React from 'react'
+import './Tag.css'
 
 export interface TagProps {
-  label?: string | string[] | undefined;
-  onClick?: () => any;
-  className: string;
+  label?: string | string[] | undefined
+  onClick?: () => any
+  className: string
 }
 
 const Tag = (props: TagProps) => {
@@ -12,7 +12,7 @@ const Tag = (props: TagProps) => {
     <div {...props} className={`${props.className} ` + props.className}>
       #{props.label}
     </div>
-  );
-};
+  )
+}
 
-export default Tag;
+export default Tag

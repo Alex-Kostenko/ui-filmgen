@@ -1,16 +1,17 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Select from './Select';
-import './Select.css';
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import React from 'react'
+
+import Select from './Select'
+import './Select.css'
 
 export default {
   title: 'UI/Select',
   component: Select,
-} as ComponentMeta<typeof Select>;
+} as ComponentMeta<typeof Select>
 
-const Template: ComponentStory<typeof Select> = (args) => <Select {...args} />;
+const Template: ComponentStory<typeof Select> = (args) => <Select {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 
 Primary.args = {
   placeholder: 'Select',
@@ -22,4 +23,4 @@ Primary.args = {
     { value: 'pixar', label: 'PIXAR' },
     { value: 'dreamWorks ', label: 'Dream Works' },
   ],
-};
+}
