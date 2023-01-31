@@ -23,6 +23,7 @@ module.exports = {
         "react", "react-hooks", "@typescript-eslint", "prettier"
     ],
     "rules": {
+        "@typescript-eslint/no-explicit-any": ["off"],
         "react/react-in-jsx-scope": "off",
         "camelcase": "error",
         "spaced-comment": "error",
