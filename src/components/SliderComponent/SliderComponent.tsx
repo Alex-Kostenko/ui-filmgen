@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import './SliderComponent.css'
 import Slider from 'react-slick'
+
 import LeftArrow from '../Icons/LeftArrow'
 import RightArrow from '../Icons/RightArrow'
 

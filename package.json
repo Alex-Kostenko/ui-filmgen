@@ -80,6 +80,7 @@
     "@types/node": "^18.11.18",
     "@types/react-date-range": "^1.4.4",
     "date-fns": "^2.29.3",
+    "eslint-import-resolver-alias": "^1.1.2",
     "react-date-range": "^1.4.0",
     "react-select": "^5.7.0",
     "react-slick": "^0.29.0",
