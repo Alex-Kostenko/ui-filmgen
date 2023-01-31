@@ -1,16 +1,16 @@
-import React from 'react';
-import './MovieCard.css';
-import Tag from '../Tag';
+import React from 'react'
+import './MovieCard.css'
+import Tag from '../Tag'
 
 export interface MovieCardProps {
-  titleEng?: string;
-  titleRus?: string;
-  description?: string;
-  date: string;
-  img: string;
-  onClick?: () => any;
-  className?: string;
-  labels?: Array<string>;
+  titleEng?: string
+  titleRus?: string
+  description?: string
+  date: string
+  img: string
+  onClick?: () => any
+  className?: string
+  labels?: Array<string>
 }
 
 const MovieCard = (props: MovieCardProps) => {
@@ -25,8 +25,8 @@ const MovieCard = (props: MovieCardProps) => {
             <h1 className='movie-title'>{props.titleRus}</h1>
           </div>
           <div className='movie-tag-container'>
-            {props.labels?.map((label) => (
-              <Tag className='tag-medium' label={label} />
+            {props.labels?.map((label, index) => (
+              <Tag className='tag-medium' key={index} label={label} />
             ))}
           </div>
         </div>
@@ -34,7 +34,7 @@ const MovieCard = (props: MovieCardProps) => {
         <p className='movie-text'>{props.description}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MovieCard;
+export default MovieCard

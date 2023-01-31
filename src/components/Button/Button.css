@@ -1,4 +1,4 @@
-@import "../../fonts/fonts.css";
+@import '../../fonts/fonts.css';
 /* темно
   сірий
   #0d0d0d
@@ -13,7 +13,7 @@
   box-shadow: 0 0 0 0 #f33f3f, inset 6em 3.5em 0 0 #f33f3f;
   font-size: 16px;
   font-weight: 700;
-  font-family: "Urbanist";
+  font-family: 'Urbanist';
   transition: 0.25s;
   color: #fff;
   padding: 16px 32px;

@@ -1,49 +1,49 @@
-import React, { useRef } from "react";
-import "./Slider.css";
-import Slider from "react-slick";
-import LeftArrow from "../Icons/LeftArrow";
-import RightArrow from "../Icons/RightArrow";
+import React, { useRef } from 'react'
+import './Slider.css'
+import Slider from 'react-slick'
+import LeftArrow from '../Icons/LeftArrow'
+import RightArrow from '../Icons/RightArrow'
 
 interface descroptionSlider {
-  img: any;
-  description: string;
+  img: any
+  description: string
 }
 
 export interface SliderProps {
-  className?: string;
-  dateForSlider?: descroptionSlider[];
-  [name: string]: any;
-  img: any;
+  className?: string
+  dateForSlider?: descroptionSlider[]
+  [name: string]: any
+  img: any
 }
 
 const SliderComponent = (props: SliderProps) => {
-  const sliderRef = useRef<any>(null);
+  const sliderRef = useRef<any>(null)
 
-  var settings = {
+  const settings = {
     dots: true,
     arrows: false,
     autoplay: true,
-  };
+  }
 
   return (
-    <div className="wrapperSlider">
-      <div className="leftArrow" onClick={() => sliderRef.current.slickPrev()}>
-        <div className="left">
+    <div className='wrapperSlider'>
+      <div className='leftArrow' onClick={() => sliderRef.current.slickPrev()}>
+        <div className='left'>
           <LeftArrow />
         </div>
       </div>
-      <div className="rightArrow" onClick={() => sliderRef.current.slickNext()}>
-        <div className="right">
+      <div className='rightArrow' onClick={() => sliderRef.current.slickNext()}>
+        <div className='right'>
           <RightArrow />
         </div>
       </div>
-      <Slider className="customSlider" ref={sliderRef} {...settings}>
+      <Slider className='customSlider' ref={sliderRef} {...settings}>
         {props.dateForSlider?.map((item: descroptionSlider, index: number) => {
-          return <div>{item.img}</div>;
+          return <div key={index}>{item.img}</div>
         })}
       </Slider>
     </div>
-  );
-};
+  )
+}
 
-export default SliderComponent;
+export default SliderComponent
