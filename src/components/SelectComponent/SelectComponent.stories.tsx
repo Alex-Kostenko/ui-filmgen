@@ -1,8 +1,15 @@
+<<<<<<< HEAD:src/components/Select/Select.stories.tsx
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
 import Select from './Select'
 import './Select.css'
+=======
+import React from 'react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import Select from './SelectComponent'
+import './SelectComponent.css'
+>>>>>>> 6411db0d9d53771ce58199e44c123aae72b6b8a9:src/components/SelectComponent/SelectComponent.stories.tsx
 
 export default {
   title: 'UI/Select',

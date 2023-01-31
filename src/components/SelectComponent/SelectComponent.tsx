@@ -1,6 +1,6 @@
 import React from 'react'
 import Select from 'react-select'
-import './Select.css'
+import './SelectComponent.css'
 
 type IOptions = {
   value: string

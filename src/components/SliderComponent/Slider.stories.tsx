@@ -1,8 +1,7 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
-
-import SliderComponent from './Slider'
-import './Slider.css'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import SliderComponent from './SliderComponent'
+import './SliderComponent.css'
 
 export default {
   title: 'UI/Slider',
