@@ -1,5 +1,8 @@
 {
-  "name": "components-film-generation",
+  "name": "@Alex-Kostenko/ui-filmgen",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Alex-Kostenko"
+  },
   "version": "0.0.17",
   "description": "storyBook",
   "main": "dist/cjs/index.js",
