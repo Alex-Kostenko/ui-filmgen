@@ -3,6 +3,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
 import postcss from 'rollup-plugin-postcss'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 
 import packageJson from './package.json' assert { type: 'json' }
 
@@ -25,7 +26,7 @@ export default [
       extensions: ['.js', '.ts', '.jsx', '.tsx'],
     },
     plugins: [
-      PeerDepsExternal({
+      peerDepsExternal({
         includeDependencies: true,
       }),
       resolve(),
