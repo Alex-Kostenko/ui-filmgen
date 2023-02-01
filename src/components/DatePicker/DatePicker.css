@@ -1,1 +1,37 @@
-@import "../../fonts/fonts.css";
+@import '../../fonts/fonts.css';
+
+.inputBox:focus-visible {
+  outline: auto 0px;
+}
+.inputBox {
+  box-shadow: 0 0 0 0 #f33f3f, inset 6em 3.5em 0 0 #f33f3f;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Urbanist';
+  transition: 0.25s;
+  color: #fff;
+  padding: 11px 7px;
+  margin: 8px;
+  border: 2px solid #f33f3f;
+  background: none;
+  line-height: 1;
+  border: none !important;
+  text-align: center;
+}
+
+.rdrDay {
+  padding: 0px;
+  margin: 0px;
+}
+
+.rdrDayToday .rdrDayNumber span:after {
+  background: #080808;
+}
+
+.inputBox:hover,
+.inputBox:focus {
+  box-shadow: 0.3em 0.3em 0 0 #1f1f1f, inset 0.3em 0.3em 0 0 #1f1f1f;
+  cursor: pointer;
+  color: #080808;
+  border-color: #1f1f1f;
+}

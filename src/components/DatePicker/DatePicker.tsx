@@ -1,6 +1,6 @@
 import { addDays, format } from 'date-fns'
 import React, { useEffect, useRef, useState } from 'react'
-import { DateRangePicker } from 'react-date-range'
+import { DateRange } from 'react-date-range'
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
 import './DatePicker.css'
@@ -44,10 +44,7 @@ const DatePicker = (/* props: DatePickerProps*/) => {
     <div className='calendarWrap'>
       <input
         ref={valueRef}
-        value={`${format(range[0].startDate, 'MM/dd/yyyy')} to ${format(
-          range[0].endDate,
-          'MM/dd/yyyy',
-        )}`}
+        value={`${format(range[0].startDate, 'dd/yyyy')} to ${format(range[0].endDate, 'dd/yyyy')}`}
         readOnly
         id='inputBox'
         className='inputBox'
@@ -55,13 +52,17 @@ const DatePicker = (/* props: DatePickerProps*/) => {
       />
       <div ref={refDate}>
         {open && (
-          <DateRangePicker
+          <DateRange
             onChange={(item: any) => setRange([item.selection])}
-            // showSelectionPreview={true}
+            editableDateInputs={true}
             moveRangeOnFirstSelection={false}
-            months={2}
+            months={1}
             ranges={range}
             direction='horizontal'
+            weekStartsOn={1}
+            rangeColors={['#f33f3f']}
+            minDate={new Date(1990, 1, 0)}
+            maxDate={new Date()}
           />
         )}
       </div>
