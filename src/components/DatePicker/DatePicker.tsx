@@ -54,13 +54,15 @@ const DatePicker = (/* props: DatePickerProps*/) => {
         {open && (
           <DateRange
             onChange={(item: any) => setRange([item.selection])}
-            // showSelectionPreview={true}
             editableDateInputs={true}
             moveRangeOnFirstSelection={false}
             months={1}
             ranges={range}
             direction='horizontal'
             weekStartsOn={1}
+            rangeColors={['#f33f3f']}
+            minDate={new Date(1990, 1, 0)}
+            maxDate={new Date()}
           />
         )}
       </div>

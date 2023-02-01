@@ -1,6 +1,6 @@
 @import '../../fonts/fonts.css';
 
-/* .inputBox:focus-visible {
+.inputBox:focus-visible {
   outline: auto 0px;
 }
 .inputBox {
@@ -18,32 +18,12 @@
   border: none !important;
   text-align: center;
 }
-.rdrDateDisplayItemActive {
-  border-color: #f33f3f;
-} */
-/* .rdrDayStartPreview .rdrDayEndPreview {
-  color: green !important;
-} */
 
-/* .rdrDays button:hover {
-  border: 1px solid yellow;
+.rdrDay {
+  padding: 0px;
+  margin: 0px;
 }
 
-.calendarWrap .rdrDay.rdrDayHovered:hover {
-  color: yellow !important;
-}
-.rdrDays .rdrDay .rdrDayHovered {
-  color: #f33f3f !important;
-}
-.rdrStartEdge {
-  color: #f33f3f !important;
-}
-.rdrEndEdge {
-  color: #f33f3f !important;
-}
-.rdrInRange {
-  color: #f33f3f !important;
-}
 .rdrDayToday .rdrDayNumber span:after {
   background: #080808;
 }
@@ -54,4 +34,4 @@
   cursor: pointer;
   color: #080808;
   border-color: #1f1f1f;
-} */
+}
