@@ -16,8 +16,6 @@ const DatePicker = (/* props: DatePickerProps*/) => {
     },
   ])
 
-  console.log(range)
-
   const [open, setOpen] = useState(false)
 
   const refDate = useRef<any>(null)
@@ -64,13 +62,6 @@ const DatePicker = (/* props: DatePickerProps*/) => {
             direction='horizontal'
             weekStartsOn={1}
           />
-          // <DateRange
-          //   editableDateInputs={true}
-          //   onChange={(item: any) => setRange([item.selection])}
-          //   moveRangeOnFirstSelection={false}
-          //   ranges={range}
-          //   weekStartsOn={1}
-          // />
         )}
       </div>
     </div>
