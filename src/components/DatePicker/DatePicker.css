@@ -1,1 +1,57 @@
-@import "../../fonts/fonts.css";
+@import '../../fonts/fonts.css';
+
+/* .inputBox:focus-visible {
+  outline: auto 0px;
+}
+.inputBox {
+  box-shadow: 0 0 0 0 #f33f3f, inset 6em 3.5em 0 0 #f33f3f;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Urbanist';
+  transition: 0.25s;
+  color: #fff;
+  padding: 11px 7px;
+  margin: 8px;
+  border: 2px solid #f33f3f;
+  background: none;
+  line-height: 1;
+  border: none !important;
+  text-align: center;
+}
+.rdrDateDisplayItemActive {
+  border-color: #f33f3f;
+} */
+/* .rdrDayStartPreview .rdrDayEndPreview {
+  color: green !important;
+} */
+
+/* .rdrDays button:hover {
+  border: 1px solid yellow;
+}
+
+.calendarWrap .rdrDay.rdrDayHovered:hover {
+  color: yellow !important;
+}
+.rdrDays .rdrDay .rdrDayHovered {
+  color: #f33f3f !important;
+}
+.rdrStartEdge {
+  color: #f33f3f !important;
+}
+.rdrEndEdge {
+  color: #f33f3f !important;
+}
+.rdrInRange {
+  color: #f33f3f !important;
+}
+.rdrDayToday .rdrDayNumber span:after {
+  background: #080808;
+}
+
+.inputBox:hover,
+.inputBox:focus {
+  box-shadow: 0.3em 0.3em 0 0 #1f1f1f, inset 0.3em 0.3em 0 0 #1f1f1f;
+  cursor: pointer;
+  color: #080808;
+  border-color: #1f1f1f;
+} */
