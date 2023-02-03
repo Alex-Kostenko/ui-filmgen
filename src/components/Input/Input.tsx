@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './Input.css'
 
 export interface ButtonProps {
@@ -7,16 +7,15 @@ export interface ButtonProps {
   className?: string
   [name: string]: any
 }
-
+// eslint-disable-next-line
 const Input = (props: ButtonProps) => {
   const [value, setValue] = useState('')
-  console.log(value.length)
 
   return (
-    <div className='col-3 input-effect'>
+    <div className='wrapperInput input-effect'>
       <input
         type={'text'}
-        className='effect-20'
+        className='mainInput'
         value={value}
         placeholder=''
         onChange={(e) => setValue(e.target.value)}

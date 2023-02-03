@@ -1,20 +1,20 @@
 @import '../../fonts/fonts.css';
-.col-3 {
+.wrapperInput {
   float: left;
   width: 27.33%;
   margin: 40px 3%;
   position: relative;
   scale: 0.8;
-  border: 1px solid #e4dada;
+  border: 2px solid #e4dada;
 }
-.effect-20 {
+.mainInput {
   border: 1px solid #ccc;
   padding: 7px 14px;
   transition: 0.4s;
   background: transparent;
 }
-.effect-20 ~ .focus-border:before,
-.effect-20 ~ .focus-border:after {
+.mainInput ~ .focus-border:before,
+.mainInput ~ .focus-border:after {
   content: '';
   position: absolute;
   top: 0;
@@ -24,14 +24,14 @@
   background-color: #f33f3f;
   transition: 0.3s;
 }
-.effect-20 ~ .focus-border:after {
+.mainInput ~ .focus-border:after {
   top: auto;
   bottom: 0;
   left: auto;
   right: 0;
 }
-.effect-20 ~ .focus-border i:before,
-.effect-20 ~ .focus-border i:after {
+.mainInput ~ .focus-border i:before,
+.mainInput ~ .focus-border i:after {
   content: '';
   position: absolute;
   top: 0;
@@ -41,27 +41,27 @@
   background-color: #f33f3f;
   transition: 0.4s;
 }
-.effect-20 ~ .focus-border i:after {
+.mainInput ~ .focus-border i:after {
   left: auto;
   right: 0;
   top: auto;
   bottom: 0;
 }
-.effect-20:focus ~ .focus-border:before,
-.effect-20:focus ~ .focus-border:after,
-.has-content.effect-20 ~ .focus-border:before,
-.has-content.effect-20 ~ .focus-border:after {
+.mainInput:focus ~ .focus-border:before,
+.mainInput:focus ~ .focus-border:after,
+.has-content.mainInput ~ .focus-border:before,
+.has-content.mainInput ~ .focus-border:after {
   width: 100%;
   transition: 0.3s;
 }
-.effect-20:focus ~ .focus-border i:before,
-.effect-20:focus ~ .focus-border i:after,
-.has-content.effect-20 ~ .focus-border i:before,
-.has-content.effect-20 ~ .focus-border i:after {
+.mainInput:focus ~ .focus-border i:before,
+.mainInput:focus ~ .focus-border i:after,
+.has-content.mainInput ~ .focus-border i:before,
+.has-content.mainInput ~ .focus-border i:after {
   height: 100%;
   transition: 0.4s;
 }
-.effect-20 ~ label {
+.mainInput ~ label {
   position: absolute;
   left: 14px;
   width: 100%;
@@ -71,8 +71,8 @@
   z-index: -1;
   letter-spacing: 0.5px;
 }
-.effect-20:focus ~ label,
-.has-content.effect-20 ~ label {
+.mainInput:focus ~ label,
+.has-content.mainInput ~ label {
   top: -18px;
   left: 0;
   font-size: 12px;
@@ -84,7 +84,7 @@
   outline: none;
 }
 
-.col-3 {
+.wrapperInput {
   float: left;
   width: 27.33%;
   margin: 40px 3%;
