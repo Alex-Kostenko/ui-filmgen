@@ -24,8 +24,8 @@
 }
 .offset:hover,
 .offset:focus {
-  box-shadow: 0.3em 0.3em 0 0 #1f1f1f, inset 0.3em 0.3em 0 0 #1f1f1f;
+  box-shadow: 0.3em 0.3em 0 0 #e4dada, inset 0.3em 0.3em 0 0 #e4dada;
   cursor: pointer;
-  color: #080808;
-  border-color: #1f1f1f;
+  color: #e4dada;
+  border-color: #e4dada;
 }
