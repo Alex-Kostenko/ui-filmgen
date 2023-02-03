@@ -5,6 +5,7 @@ import postcss from 'rollup-plugin-postcss'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { babel } from '@rollup/plugin-babel'
 import resolve from '@rollup/plugin-node-resolve'
+import { terser } from 'rollup-plugin-terser'
 
 import packageJson from './package.json' assert { type: 'json' }
 
@@ -16,6 +17,7 @@ export default [
         file: packageJson.main,
         format: 'cjs',
         sourcemap: true,
+        name: 'react-lib',
       },
       {
         file: packageJson.module,
@@ -23,25 +25,24 @@ export default [
         sourcemap: true,
       },
     ],
-    resolve: {
-      extensions: ['.js', '.ts', '.jsx', '.tsx'],
-    },
     plugins: [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
+      typescript({ tsconfig: './tsconfig.json', exclude: ['**/*.stories.tsx', '**/*.test.tsx'] }),
       postcss(),
+      terser(),
       babel({
         babelHelpers: 'bundled',
         exclude: './node_modules/**',
       }),
     ],
+    external: [/\.css$/, 'react', 'react-dom', 'react-select', 'react-slick'],
   },
   {
     input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     plugins: [dts()],
-    external: [/\.css$/],
+    external: [/\.css$/, 'react', 'react-dom', 'react-select', 'react-slick'],
   },
 ]
